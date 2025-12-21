@@ -1,0 +1,91 @@
+[
+  {
+    "id": "u_doctor_1765876514950",
+    "userId": "u_doctor_1765876514950",
+    "name": "Harsh Kumar",
+    "email": "kumarharsh8477@gmail.com",
+    "specialization": "Cardiology",
+    "department": "Cardiology",
+    "qualifications": [],
+    "phone": "9876543210",
+    "bio": "Expert in heart diseases",
+    "workingDays": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri"
+    ],
+    "workingHours": {
+      "start": "09:00",
+      "end": "17:00"
+    },
+    "slotMinutes": 30,
+    "appointments": [
+      "a_1765963268757"
+    ],
+    "status": "Available",
+    "rating": 4.8,
+    "consultationFee": 500,
+    "createdAt": "2025-12-16T09:15:14.951Z"
+  },
+  {
+    "id": "u_doctor_1765962539503",
+    "userId": "u_doctor_1765962539503",
+    "name": "AYUSH KAMBOJ",
+    "email": "ayush@lpu.in",
+    "specialization": "Radiologist",
+    "department": "Staff",
+    "qualifications": [],
+    "phone": "",
+    "bio": "",
+    "workingDays": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri"
+    ],
+    "workingHours": {
+      "start": "09:00",
+      "end": "17:00"
+    },
+    "slotMinutes": 30,
+    "appointments": [
+      "a_1765963642507",
+      "a_1765964935474"
+    ],
+    "status": "Available",
+    "rating": 5,
+    "createdAt": "2025-12-17T09:08:59.503Z"
+  },
+  {
+    "id": "u_doctor_1766313608887",
+    "userId": "u_doctor_1766313608887",
+    "name": "Abhishek Kumar",
+    "email": "abhishek@gmail.com",
+    "specialization": "Gyancologist",
+    "department": "Gyancologist Department",
+    "qualifications": [],
+    "phone": "",
+    "bio": "",
+    "workingDays": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri"
+    ],
+    "workingHours": {
+      "start": "09:00",
+      "end": "17:00"
+    },
+    "slotMinutes": 30,
+    "appointments": [
+      "a_1766313814665"
+    ],
+    "status": "Available",
+    "rating": 5,
+    "createdAt": "2025-12-21T10:40:08.888Z"
+  }
+]

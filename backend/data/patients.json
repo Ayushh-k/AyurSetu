@@ -1,0 +1,113 @@
+[
+  {
+    "id": "u_patient_1765862336292",
+    "userId": "u_patient_1765862336292",
+    "name": "Test User",
+    "email": "test.user@example.com",
+    "phone": "",
+    "age": null,
+    "gender": "",
+    "address": "",
+    "medicalHistory": [],
+    "allergies": [],
+    "emergencyContact": {},
+    "appointments": [],
+    "createdAt": "2025-12-16T05:18:56.293Z"
+  },
+  {
+    "id": "u_patient_1765862389607",
+    "userId": "u_patient_1765862389607",
+    "name": "Test User",
+    "email": "newtest@example.com",
+    "phone": "",
+    "age": null,
+    "gender": "",
+    "address": "",
+    "medicalHistory": [],
+    "allergies": [],
+    "emergencyContact": {},
+    "appointments": [],
+    "createdAt": "2025-12-16T05:19:49.608Z"
+  },
+  {
+    "id": "u_patient_1765862401463",
+    "userId": "u_patient_1765862401463",
+    "name": "Test User",
+    "email": "test999@test.com",
+    "phone": "",
+    "age": null,
+    "gender": "",
+    "address": "",
+    "medicalHistory": [],
+    "allergies": [],
+    "emergencyContact": {},
+    "appointments": [],
+    "createdAt": "2025-12-16T05:20:01.463Z"
+  },
+  {
+    "id": "u_patient_1765862566701",
+    "userId": "u_patient_1765862566701",
+    "name": "Test User",
+    "email": "testuser@test.com",
+    "phone": "",
+    "age": null,
+    "gender": "",
+    "address": "",
+    "medicalHistory": [],
+    "allergies": [],
+    "emergencyContact": {},
+    "appointments": [],
+    "createdAt": "2025-12-16T05:22:46.701Z"
+  },
+  {
+    "id": "u_patient_1765864167930",
+    "userId": "u_patient_1765864167930",
+    "name": "Harsh kumar",
+    "email": "harsh123@gmail.com",
+    "phone": "",
+    "age": null,
+    "gender": "",
+    "address": "",
+    "medicalHistory": [],
+    "allergies": [],
+    "emergencyContact": {},
+    "appointments": [],
+    "createdAt": "2025-12-16T05:49:27.932Z"
+  },
+  {
+    "id": "u_patient_1765962631741",
+    "userId": "u_patient_1765962631741",
+    "name": "Akshit kamboj",
+    "email": "akshit@gmail.com",
+    "phone": "8477891462",
+    "age": "69",
+    "gender": "Other",
+    "address": "Saharanpur",
+    "medicalHistory": [],
+    "allergies": [],
+    "emergencyContact": {},
+    "appointments": [
+      "a_1765963268757",
+      "a_1765963642507",
+      "a_1765964935474"
+    ],
+    "createdAt": "2025-12-17T09:10:31.743Z"
+  },
+  {
+    "id": "u_patient_1766313701398",
+    "userId": "u_patient_1766313701398",
+    "name": "Sumit",
+    "email": "sumit@gmail.com",
+    "phone": "8708760308",
+    "age": "69",
+    "gender": "Other",
+    "address": "Town Pg",
+    "medicalHistory": [],
+    "allergies": [],
+    "emergencyContact": {},
+    "appointments": [
+      "a_1766313814665"
+    ],
+    "createdAt": "2025-12-21T10:41:41.400Z"
+  }
+]

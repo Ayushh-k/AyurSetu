@@ -1,0 +1,90 @@
+[
+  {
+    "id": "u_admin_1",
+    "name": "Admin User",
+    "email": "admin@ayursetu.com",
+    "passwordHash": "$2a$10$dn4i0tz6Ew3t1rU2F1sL9uZF9K3K1L4M5N6O7P8Q9R0S1T2U3V4W5X6Y7Z8a9b",
+    "role": "admin",
+    "createdAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": "u_patient_1765862336292",
+    "email": "test.user@example.com",
+    "name": "Test User",
+    "passwordHash": "$2a$10$Fm4QUGPnl0H8HuCmSsvfvOm..ixe68o8.H9w8e/wkyDuli1NszNUS",
+    "role": "patient",
+    "createdAt": "2025-12-16T05:18:56.292Z"
+  },
+  {
+    "id": "u_patient_1765862389607",
+    "email": "newtest@example.com",
+    "name": "Test User",
+    "passwordHash": "$2a$10$iowebEBpzUvqjziBDxLA3.wYFfa6K0R1gKw8c6EgA.Dj/pt39cfsa",
+    "role": "patient",
+    "createdAt": "2025-12-16T05:19:49.607Z"
+  },
+  {
+    "id": "u_patient_1765862401463",
+    "email": "test999@test.com",
+    "name": "Test User",
+    "passwordHash": "$2a$10$qBa20oFxeaT4dLjGExaBfeHHbQcVJkj6y2FzMqex9QDx7WxsIcHBm",
+    "role": "patient",
+    "createdAt": "2025-12-16T05:20:01.463Z"
+  },
+  {
+    "id": "u_patient_1765862566701",
+    "email": "testuser@test.com",
+    "name": "Test User",
+    "passwordHash": "$2a$10$KeZeY9/lfmWusyBGJkrj8.lG0fNUhd583UmqK6bv1pAg.sbRiUrIq",
+    "role": "patient",
+    "createdAt": "2025-12-16T05:22:46.701Z"
+  },
+  {
+    "id": "u_patient_1765864167930",
+    "email": "harsh123@gmail.com",
+    "name": "Harsh kumar",
+    "passwordHash": "$2a$10$h55TH7t6JbmfW039TjNHUuTrTp7Bzgu6L52AuiisIGuI2CVUdcr9G",
+    "role": "patient",
+    "createdAt": "2025-12-16T05:49:27.930Z"
+  },
+  {
+    "id": "u_doctor_1765876514950",
+    "email": "kumarharsh8477@gmail.com",
+    "name": "Harsh Kumar",
+    "passwordHash": "$2a$10$MceDk./Ay4Qw3tcxow796OBeXVFpXtpma/IpZHcu8zrmanZvw4Iba",
+    "role": "doctor",
+    "createdAt": "2025-12-16T09:15:14.951Z"
+  },
+  {
+    "id": "u_doctor_1765962539503",
+    "email": "ayush@lpu.in",
+    "name": "AYUSH KAMBOJ",
+    "passwordHash": "$2a$10$FB4q2ABpKlHdEBufhXzyJuMRD8qeubH2h/qTEnKVtCMpc1NtIZz/a",
+    "role": "doctor",
+    "createdAt": "2025-12-17T09:08:59.503Z"
+  },
+  {
+    "id": "u_patient_1765962631741",
+    "email": "akshit@gmail.com",
+    "name": "Akshit kamboj",
+    "passwordHash": "$2a$10$He1YTP0s.Axdf2dWapt3T.0i1IM1VYE9x8MZUFw.bCygC7T2Rkfx2",
+    "role": "patient",
+    "createdAt": "2025-12-17T09:10:31.741Z"
+  },
+  {
+    "id": "u_doctor_1766313608887",
+    "email": "abhishek@gmail.com",
+    "name": "Abhishek Kumar",
+    "passwordHash": "$2a$10$Cr4Tq3Qv/fsWaXTgvkOMSeJbWwxHOSinKCo17V1Migt9g0iJedC3i",
+    "role": "doctor",
+    "createdAt": "2025-12-21T10:40:08.887Z"
+  },
+  {
+    "id": "u_patient_1766313701398",
+    "email": "sumit@gmail.com",
+    "name": "Sumit",
+    "passwordHash": "$2a$10$DwnbGAm6KLanB3ywPFb6eulnkTC5usbHmXXFj2w5m0u31oQmNKngG",
+    "role": "patient",
+    "createdAt": "2025-12-21T10:41:41.398Z"
+  }
+]

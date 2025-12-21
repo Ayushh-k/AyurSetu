@@ -1,0 +1,63 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.doctor-availability-header {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.availability-calendar {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.calendar-day {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.calendar-day:last-child {
+  border-bottom: none;
+}
+
+.available-slot {
+  color: green;
+  cursor: pointer;
+}
+
+.unavailable-slot {
+  color: red;
+  cursor: not-allowed;
+}
+
+.booking-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.booking-button:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 0.8rem;
+  color: #666;
+}

@@ -1,0 +1,34 @@
+{
+  "name": "ayursetu",
+  "version": "1.0.0",
+  "description": "A fully functional and animated website for optimizing doctor availability and ointment scheduling.",
+  "main": "src/main.jsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "markdown-pdf": "^11.0.0",
+    "vite": "^5.0.0"
+  },
+  "keywords": [
+    "react",
+    "doctor",
+    "ointment",
+    "scheduling",
+    "availability"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
