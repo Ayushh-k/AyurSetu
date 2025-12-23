@@ -22,7 +22,9 @@
     },
     "slotMinutes": 30,
     "appointments": [
-      "a_1765963268757"
+      "a_1765963268757",
+      "a_1766327035569",
+      "a_1766328438151"
     ],
     "status": "Available",
     "rating": 4.8,
@@ -81,9 +83,7 @@
       "end": "17:00"
     },
     "slotMinutes": 30,
-    "appointments": [
-      "a_1766313814665"
-    ],
+    "appointments": [],
     "status": "Available",
     "rating": 5,
     "createdAt": "2025-12-21T10:40:08.888Z"
