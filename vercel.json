@@ -1,8 +1,6 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "nodeVersion": "18.x",
-  "installCommand": "npm install",
   "rewrites": [
     {
       "source": "/(.*)",
