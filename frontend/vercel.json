@@ -2,6 +2,9 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "crons": [],
+  "env": {
+    "VITE_API_URL": "@VITE_API_URL"
+  },
   "rewrites": [
     {
       "source": "/(.*)",
