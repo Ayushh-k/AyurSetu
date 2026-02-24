@@ -5,9 +5,10 @@
   "main": "src/main.jsx",
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build",
+    "build": "vite build",
     "serve": "vite preview",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "node ./fix-permissions.js"
   },
   "dependencies": {
     "axios": "^1.6.0",

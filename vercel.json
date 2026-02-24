@@ -1,9 +1,7 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "env": {
-    "VITE_APP_NAME": "@VITE_APP_NAME"
-  },
+  "crons": [],
   "rewrites": [
     {
       "source": "/(.*)",
