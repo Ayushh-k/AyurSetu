@@ -1,4 +1,13 @@
-{
-  "name": "ayursetu-backend",
-  "version": "1.0.0"
-}
+services:
+  - type: web
+    name: ayursetu-backend
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+
