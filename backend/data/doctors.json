@@ -24,7 +24,8 @@
     "appointments": [
       "a_1765963268757",
       "a_1766327035569",
-      "a_1766328438151"
+      "a_1766328438151",
+      "a_1767157273710"
     ],
     "status": "Available",
     "rating": 4.8,
@@ -83,9 +84,40 @@
       "end": "17:00"
     },
     "slotMinutes": 30,
-    "appointments": [],
+    "appointments": [
+      "a_1766484674168"
+    ],
     "status": "Available",
     "rating": 5,
     "createdAt": "2025-12-21T10:40:08.888Z"
+  },
+  {
+    "id": "u_doctor_1766482904672",
+    "userId": "u_doctor_1766482904672",
+    "name": "Dr. Ayush Kamboj",
+    "email": "ayush123@gmail.com",
+    "specialization": "cardiologist",
+    "department": "Heart",
+    "qualifications": [],
+    "phone": "",
+    "bio": "",
+    "workingDays": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri"
+    ],
+    "workingHours": {
+      "start": "09:00",
+      "end": "17:00"
+    },
+    "slotMinutes": 30,
+    "appointments": [
+      "a_1767157359815"
+    ],
+    "status": "Available",
+    "rating": 5,
+    "createdAt": "2025-12-23T09:41:44.689Z"
   }
 ]

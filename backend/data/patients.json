@@ -107,8 +107,27 @@
     "allergies": [],
     "emergencyContact": {},
     "appointments": [
-      "a_1766328438151"
+      "a_1766328438151",
+      "a_1766484674168"
     ],
     "createdAt": "2025-12-21T10:41:41.400Z"
+  },
+  {
+    "id": "u_patient_1767107982164",
+    "userId": "u_patient_1767107982164",
+    "name": "Ritwiz",
+    "email": "ritwiz@gmail.com",
+    "phone": "1234567890",
+    "age": "25",
+    "gender": "Male",
+    "address": "asdfghjkl",
+    "medicalHistory": [],
+    "allergies": [],
+    "emergencyContact": {},
+    "appointments": [
+      "a_1767157273710",
+      "a_1767157359815"
+    ],
+    "createdAt": "2025-12-30T15:19:42.167Z"
   }
 ]

@@ -29,19 +29,26 @@ const LandingPage = ({ isAuthenticated }) => {
     <div className="landing-container">
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="hero-content" style={{ transform: `translateY(${scrollY * 0.5}px)` }}>
+        <div
+          className="hero-content"
+          style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+        >
           <div className="hero-text">
             <h1 className="hero-title">
-              <span className="highlight-text">AyurSetu</span> - Smart Healthcare Management
+              <span className="highlight-text">AyurSetu</span> - Smart
+              Healthcare Management
             </h1>
             <p className="hero-subtitle">
-              Revolutionizing hospital operations with intelligent doctor scheduling and ointment allocation
+              Revolutionizing hospital operations with intelligent doctor
+              scheduling
             </p>
             <div className="hero-buttons">
               <button className="btn btn-primary" onClick={handleGetStarted}>
                 Get Started
               </button>
-              <button className="btn btn-secondary" onClick={handleLearnMore}>Learn More</button>
+              <button className="btn btn-secondary" onClick={handleLearnMore}>
+                Learn More
+              </button>
             </div>
           </div>
           <div className="hero-image">
@@ -52,10 +59,6 @@ const LandingPage = ({ isAuthenticated }) => {
             <div className="floating-card card-2">
               <div className="icon">👨‍⚕️</div>
               <p>Doctor Scheduling</p>
-            </div>
-            <div className="floating-card card-3">
-              <div className="icon">💊</div>
-              <p>Ointment Allocation</p>
             </div>
           </div>
         </div>
@@ -69,17 +72,26 @@ const LandingPage = ({ isAuthenticated }) => {
             <div className="problem-card">
               <div className="problem-icon">⏳</div>
               <h3>Long Waiting Times</h3>
-              <p>Patients face extended wait periods due to inefficient scheduling and resource allocation.</p>
+              <p>
+                Patients face extended wait periods due to inefficient
+                scheduling and resource allocation.
+              </p>
             </div>
             <div className="problem-card">
               <div className="problem-icon">📋</div>
               <h3>Manual Management</h3>
-              <p>Outdated systems lead to human errors and operational inefficiencies.</p>
+              <p>
+                Outdated systems lead to human errors and operational
+                inefficiencies.
+              </p>
             </div>
             <div className="problem-card">
               <div className="problem-icon">🔄</div>
               <h3>Resource Wastage</h3>
-              <p>Poor allocation of medical resources and staff schedules impact hospital revenue.</p>
+              <p>
+                Poor allocation of medical resources and staff schedules impact
+                hospital revenue.
+              </p>
             </div>
           </div>
         </div>
@@ -89,42 +101,54 @@ const LandingPage = ({ isAuthenticated }) => {
       <section className="solution-section">
         <div className="container">
           <h2>Our Solution</h2>
-          <p className="solution-intro">AyurSetu provides an intelligent, seamless platform that transforms hospital management</p>
+          <p className="solution-intro">
+            AyurSetu provides an intelligent, seamless platform that transforms
+            hospital management
+          </p>
           <div className="features-grid">
             <div className="feature-card">
               <div className="feature-number">01</div>
               <h3>Real-Time Doctor Availability</h3>
-              <p>Track doctor schedules in real-time with automated availability updates and instant notifications.</p>
+              <p>
+                Track doctor schedules in real-time with automated availability
+                updates and instant notifications.
+              </p>
               <div className="feature-icon">📅</div>
             </div>
             <div className="feature-card">
               <div className="feature-number">02</div>
               <h3>Smart Appointment Scheduling</h3>
-              <p>AI-powered appointment system that minimizes patient wait times and optimizes doctor utilization.</p>
+              <p>
+                AI-powered appointment system that minimizes patient wait times
+                and optimizes doctor utilization.
+              </p>
               <div className="feature-icon">🔔</div>
             </div>
             <div className="feature-card">
               <div className="feature-number">03</div>
-              <h3>Ointment Allocation System</h3>
-              <p>Efficient inventory management and allocation of medicines and ointments based on patient needs.</p>
-              <div className="feature-icon">🧴</div>
-            </div>
-            <div className="feature-card">
-              <div className="feature-number">04</div>
               <h3>Instant Confirmation</h3>
-              <p>Automated booking confirmations with SMS and email notifications for enhanced patient experience.</p>
+              <p>
+                Automated booking confirmations with SMS and email notifications
+                for enhanced patient experience.
+              </p>
               <div className="feature-icon">✅</div>
             </div>
             <div className="feature-card">
-              <div className="feature-number">05</div>
+              <div className="feature-number">04</div>
               <h3>Analytics Dashboard</h3>
-              <p>Comprehensive analytics and reporting for hospital administrators to make data-driven decisions.</p>
+              <p>
+                Comprehensive analytics and reporting for hospital
+                administrators to make data-driven decisions.
+              </p>
               <div className="feature-icon">📊</div>
             </div>
             <div className="feature-card">
-              <div className="feature-number">06</div>
+              <div className="feature-number">05</div>
               <h3>Patient Portal</h3>
-              <p>User-friendly interface for patients to book appointments, track prescriptions, and manage health records.</p>
+              <p>
+                User-friendly interface for patients to book appointments, track
+                prescriptions, and manage health records.
+              </p>
               <div className="feature-icon">👥</div>
             </div>
           </div>
@@ -139,13 +163,19 @@ const LandingPage = ({ isAuthenticated }) => {
             <div className="step-item">
               <div className="step-circle">1</div>
               <h3>Sign Up</h3>
-              <p>Create your hospital or patient account with secure authentication</p>
+              <p>
+                Create your hospital or patient account with secure
+                authentication
+              </p>
             </div>
             <div className="step-connector"></div>
             <div className="step-item">
               <div className="step-circle">2</div>
               <h3>Browse Doctors</h3>
-              <p>View available doctors and their real-time availability schedules</p>
+              <p>
+                View available doctors and their real-time availability
+                schedules
+              </p>
             </div>
             <div className="step-connector"></div>
             <div className="step-item">
@@ -203,20 +233,29 @@ const LandingPage = ({ isAuthenticated }) => {
           <div className="testimonials-grid">
             <div className="testimonial-card">
               <div className="stars">⭐⭐⭐⭐⭐</div>
-              <p>"AyurSetu reduced our patient wait time significantly. A game-changer for our operations!"</p>
-              <h4>Dr. Rajesh Kumar</h4>
+              <p>
+                "AyurSetu reduced our patient wait time significantly. A
+                game-changer for our operations!"
+              </p>
+              <h4>Ayush kamboj</h4>
               <p className="hospital-name">City General Hospital</p>
             </div>
             <div className="testimonial-card">
               <div className="stars">⭐⭐⭐⭐⭐</div>
-              <p>"Outstanding platform! Our staff efficiency improved by 45% after implementation."</p>
-              <h4>Ms. Priya Sharma</h4>
+              <p>
+                "Outstanding platform! Our staff efficiency improved by 45%
+                after implementation."
+              </p>
+              <h4>Harsh kumar</h4>
               <p className="hospital-name">Apollo Health Center</p>
             </div>
             <div className="testimonial-card">
               <div className="stars">⭐⭐⭐⭐⭐</div>
-              <p>"The scheduling system is intuitive and the customer support is exceptional."</p>
-              <h4>Mr. Vikram Patel</h4>
+              <p>
+                "The scheduling system is intuitive and the customer support is
+                exceptional."
+              </p>
+              <h4>Abhishek kumar</h4>
               <p className="hospital-name">CarePlus Medical Institute</p>
             </div>
           </div>
@@ -228,8 +267,13 @@ const LandingPage = ({ isAuthenticated }) => {
         <div className="container cta-content">
           <h2>Ready to Transform Your Hospital?</h2>
           <p>Join hundreds of hospitals already using AyurSetu</p>
-          <button className="btn btn-primary btn-large" onClick={handleGetStarted}>
-            {isAuthenticated ? "Go to Dashboard" : "Start Your Free Trial Today"}
+          <button
+            className="btn btn-primary btn-large"
+            onClick={handleGetStarted}
+          >
+            {isAuthenticated
+              ? "Go to Dashboard"
+              : "Start Your Free Trial Today"}
           </button>
         </div>
       </section>
@@ -261,7 +305,9 @@ const LandingPage = ({ isAuthenticated }) => {
         <div className="container">
           <div className="newsletter-box">
             <h3>Stay Updated</h3>
-            <p>Subscribe to get updates on new features and healthcare insights</p>
+            <p>
+              Subscribe to get updates on new features and healthcare insights
+            </p>
             <div className="newsletter-input">
               <input type="email" placeholder="Enter your email" />
               <button className="btn btn-primary">Subscribe</button>

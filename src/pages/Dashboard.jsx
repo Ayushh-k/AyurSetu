@@ -10,7 +10,6 @@ const Dashboard = ({ isAuthenticated }) => {
   const [doctors, setDoctors] = useState([]);
   const [doctorFilter, setDoctorFilter] = useState("all");
   const [myAppointments, setMyAppointments] = useState([]);
-  const [ointments, setOintments] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedDoctor, setSelectedDoctor] = useState(null);
   const [appointmentDate, setAppointmentDate] = useState("");
@@ -280,12 +279,6 @@ const Dashboard = ({ isAuthenticated }) => {
           📋 My Appointments
         </button>
         <button
-          className={`nav-btn ${activeTab === "ointments" ? "active" : ""}`}
-          onClick={() => setActiveTab("ointments")}
-        >
-          🧴 Medications
-        </button>
-        <button
           className={`nav-btn ${activeTab === "prescriptions" ? "active" : ""}`}
           onClick={() => setActiveTab("prescriptions")}
         >
@@ -487,30 +480,6 @@ const Dashboard = ({ isAuthenticated }) => {
                   </div>
                 ))
               )}
-            </div>
-          </div>
-        )}
-
-        {/* Medications Tab */}
-        {activeTab === "ointments" && (
-          <div className="tab-content">
-            <h2>Available Medications & Ointments</h2>
-            <div className="ointments-grid">
-              {ointments.map(ointment => (
-                <div key={ointment.id} className="ointment-card">
-                  <div className="ointment-icon">🧴</div>
-                  <h3>{ointment.name}</h3>
-                  <div className="ointment-info">
-                    <p><strong>Category:</strong> {ointment.category}</p>
-                    <p><strong>Stock:</strong> <span className={ointment.stock > 30 ? "stock-high" : "stock-low"}>{ointment.stock} units</span></p>
-                    <p><strong>Price:</strong> ₹{ointment.price}</p>
-                  </div>
-                  <div className="ointment-actions">
-                    <button className="ointment-btn add">Add to Cart</button>
-                    <button className="ointment-btn request">Request Prescription</button>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         )}

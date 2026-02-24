@@ -7,21 +7,9 @@ const DoctorDashboard = () => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("appointments");
   const [appointments, setAppointments] = useState([]);
-  const [medications, setMedications] = useState([
-    { id: 1, name: "Aspirin", dosage: "500mg", quantity: 100, price: 50 },
-    { id: 2, name: "Paracetamol", dosage: "650mg", quantity: 150, price: 40 },
-    { id: 3, name: "Amoxicillin", dosage: "250mg", quantity: 50, price: 120 },
-  ]);
   const [doctorInfo, setDoctorInfo] = useState(null);
   const [loading, setLoading] = useState(true);
   const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split('T')[0]);
-  const [showAddMed, setShowAddMed] = useState(false);
-  const [newMedication, setNewMedication] = useState({
-    name: "",
-    dosage: "",
-    quantity: "",
-    price: "",
-  });
 
   const userId = localStorage.getItem('userId');
   const userRole = localStorage.getItem('userRole');
@@ -46,30 +34,6 @@ const DoctorDashboard = () => {
     } finally {
       setLoading(false);
     }
-  };
-
-  const handleAddMedication = () => {
-    if (!newMedication.name || !newMedication.dosage || !newMedication.quantity || !newMedication.price) {
-      alert("Please fill in all fields");
-      return;
-    }
-    setMedications([
-      ...medications,
-      {
-        id: medications.length + 1,
-        ...newMedication,
-        quantity: parseInt(newMedication.quantity),
-        price: parseFloat(newMedication.price),
-      },
-    ]);
-    setNewMedication({ name: "", dosage: "", quantity: "", price: "" });
-    setShowAddMed(false);
-    alert("Medication added successfully!");
-  };
-
-  const handleDeleteMedication = (id) => {
-    setMedications(medications.filter(med => med.id !== id));
-    alert("Medication removed");
   };
 
   const handleUpdateStatus = async (appointmentId, newStatus) => {
@@ -155,12 +119,6 @@ const DoctorDashboard = () => {
             onClick={() => setActiveTab("appointments")}
           >
             📅 Appointments
-          </button>
-          <button
-            className={`tab-btn ${activeTab === "medications" ? "active" : ""}`}
-            onClick={() => setActiveTab("medications")}
-          >
-            💊 Medications
           </button>
           <button
             className={`tab-btn ${activeTab === "profile" ? "active" : ""}`}
@@ -264,96 +222,6 @@ const DoctorDashboard = () => {
                   </div>
                 </div>
               )}
-            </div>
-          )}
-
-          {/* Medications Tab */}
-          {activeTab === "medications" && (
-            <div className="medications-section">
-              <h2>💊 Manage Medications</h2>
-              <button className="add-med-btn" onClick={() => setShowAddMed(true)}>
-                ➕ Add Medication
-              </button>
-
-              {showAddMed && (
-                <div className="add-med-form">
-                  <h3>Add New Medication</h3>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      placeholder="Medication Name"
-                      value={newMedication.name}
-                      onChange={(e) => setNewMedication({ ...newMedication, name: e.target.value })}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      placeholder="Dosage (e.g., 500mg)"
-                      value={newMedication.dosage}
-                      onChange={(e) => setNewMedication({ ...newMedication, dosage: e.target.value })}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="number"
-                      placeholder="Quantity in Stock"
-                      value={newMedication.quantity}
-                      onChange={(e) => setNewMedication({ ...newMedication, quantity: e.target.value })}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="number"
-                      placeholder="Price (₹)"
-                      value={newMedication.price}
-                      onChange={(e) => setNewMedication({ ...newMedication, price: e.target.value })}
-                    />
-                  </div>
-                  <div className="form-actions">
-                    <button onClick={handleAddMedication} className="save-btn">Save</button>
-                    <button onClick={() => setShowAddMed(false)} className="cancel-btn">Cancel</button>
-                  </div>
-                </div>
-              )}
-
-              <div className="medications-list">
-                {medications.length > 0 ? (
-                  <table className="medications-table">
-                    <thead>
-                      <tr>
-                        <th>Medication</th>
-                        <th>Dosage</th>
-                        <th>Stock</th>
-                        <th>Price</th>
-                        <th>Actions</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {medications.map((med) => (
-                        <tr key={med.id}>
-                          <td>{med.name}</td>
-                          <td>{med.dosage}</td>
-                          <td className={med.quantity < 50 ? 'low-stock' : 'in-stock'}>
-                            {med.quantity} units
-                          </td>
-                          <td>₹{med.price}</td>
-                          <td>
-                            <button
-                              className="delete-btn"
-                              onClick={() => handleDeleteMedication(med.id)}
-                            >
-                              🗑️ Remove
-                            </button>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                ) : (
-                  <p className="no-medications">No medications added yet</p>
-                )}
-              </div>
             </div>
           )}
 
